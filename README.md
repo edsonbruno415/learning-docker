@@ -11,6 +11,8 @@
 
 #### executar o container em modo interativo -it
 
+- build = criar imagem
+- run = rodar container
 - -it = interativo
 - apk = instalador docker, equivalente ao apt do linux
 - -d = rodar em segundo plano
@@ -19,5 +21,9 @@
 ```
 docker run -it app .
 
-docker run -dp 3655:3655 app
+docker run -dp 3000:3000 app
+
+docker image tag IMAGE_ID edsonbruno/app:v1.0.0
+
+docker image save -o appv1.tar app:v1.0.0
 ```
