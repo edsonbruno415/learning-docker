@@ -13,5 +13,9 @@ executar o container em modo interativo -it
 
 -it = interativo
 apk = instalador docker, equivalente ao apt do linux
+-d = rodar em segundo plano
+-p = port
 
 docker run -it app .
+
+docker run -dp 3655:3655 app
